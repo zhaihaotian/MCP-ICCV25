@@ -167,109 +167,49 @@ Vision-Language Models</h1>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- 這是一個容器，用來讓兩張圖片並排顯示 -->
+    <!-- 
+      解決方案：我們將圖片和文字分成兩行來處理。
+      第一行只放圖片，確保它們頂部對齊。
+      第二行只放文字，確保它們也彼此對齊。
+    -->
+
+    <!-- 第一行：只放圖片 -->
     <div class="columns is-centered is-vcentered">
-      
       <!-- Column 1: 第一張圖片 -->
       <div class="column">
         <div class="content">
-          <!-- 
-            *** 診斷步驟 1 ***
-            我們先用一個網路佔位圖來測試版面是否正常。
-            如果能看到一個灰色方塊，代表版面沒問題。
-            src="https://placehold.co/600x400/EEE/31343C?text=Image+1+Here"
-          -->
-          <!-- 
-            *** 診斷步驟 2 ***
-            確認版面正常後，請將下面的 src 屬性換成您自己的圖片路徑。
-            請再三確認：
-            1. 圖片確實放在 static/images 資料夾裡。
-            2. 檔名 (包含大小寫和 .png) 完全正確。
-            例如: src="./static/images/figure_1.png"
-          -->
+          <!-- 您的第一張圖片 -->
           <img src="./static/images/acc.png" alt="Figure 1"/>
-          <p class="has-text-justified" style="margin-top: 10px;">
-            <strong>Figure 1:</strong> Illustration of the average classification accuracy, test-time training GFLOPs, and FPS for different methods on cross-dataset classification tasks. For prompt-based and cache-based methods, the icon sizes denote the FPS values.
-          </p>
         </div>
       </div>
 
       <!-- Column 2: 第二張圖片 -->
       <div class="column">
         <div class="content">
-          <!-- 
-            同樣地，先用佔位圖測試，然後換成您自己的第二張圖片路徑。
-            例如: src="./static/images/figure_2.png"
-          -->
+          <!-- 您的第二張圖片 -->
           <img src="./static/images/intro.png" alt="Figure 2"/>
-          <p class="has-text-justified" style="margin-top: 10px;">
-            <strong>Figure 2:</strong> The x-axis represents the compactness of test data(defined as the inverse of the average distance between each sample and its class center), and the y-axis represents the accuracy improvement of TDA relative to zero-shot CLIP. A positive correlation is observed on the curve and two t-SNE visualizations on EuroSAT and Aircraft datasets.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
         </div>
       </div>
     </div>
+
+    <!-- 第二行：只放文字說明 -->
+    <div class="columns is-centered">
+      <!-- Column 1: 第一段文字 -->
+      <div class="column">
+        <p class="has-text-justified">
+          <strong>Figure 1:</strong> Illustration of the average classification accuracy, test-time training GFLOPs, and FPS for different methods on cross-dataset classification tasks. For prompt-based and cache-based methods, the icon sizes denote the FPS values.
+        </p>
+      </div>
+      <!-- Column 2: 第二段文字 -->
+      <div class="column">
+        <p class="has-text-justified">
+          <strong>Figure 2:</strong> The x-axis represents the compactness of test data(defined as the inverse of the average distance between each sample and its class center), and the y-axis represents the accuracy improvement of TDA relative to zero-shot CLIP. A positive correlation is observed on the curve and two t-SNE visualizations on EuroSAT and Aircraft datasets.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -287,7 +227,7 @@ Vision-Language Models</h1>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -295,7 +235,7 @@ Vision-Language Models</h1>
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
