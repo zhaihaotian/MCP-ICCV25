@@ -118,16 +118,16 @@ Vision-Language Models</h1>
                   </span>
                   <span>Paper</span>
                 </a>
-              <!-- </span>
+              </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2508.01225"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Video Link. -->
               <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
@@ -139,24 +139,23 @@ Vision-Language Models</h1>
                 </a>
               </span> -->
               <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
+               <span class="link-block">
+                <span class="external-link button is-normal is-rounded is-dark is-disabled">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
-                  </a>
+                  <span>Coming Soon</span>
+                </span>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -166,18 +165,49 @@ Vision-Language Models</h1>
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
+    <!-- 這是一個容器，用來讓兩張圖片並排顯示 -->
+    <div class="columns is-centered is-vcentered">
+      
+      <!-- Column 1: 第一張圖片 -->
+      <div class="column">
+        <div class="content">
+          <!-- 
+            *** 診斷步驟 1 ***
+            我們先用一個網路佔位圖來測試版面是否正常。
+            如果能看到一個灰色方塊，代表版面沒問題。
+            src="https://placehold.co/600x400/EEE/31343C?text=Image+1+Here"
+          -->
+          <!-- 
+            *** 診斷步驟 2 ***
+            確認版面正常後，請將下面的 src 屬性換成您自己的圖片路徑。
+            請再三確認：
+            1. 圖片確實放在 static/images 資料夾裡。
+            2. 檔名 (包含大小寫和 .png) 完全正確。
+            例如: src="./static/images/figure_1.png"
+          -->
+          <img src="https://placehold.co/600x400/EEE/31343C?text=Image+1+Here" alt="Figure 1"/>
+          <p class="has-text-justified" style="margin-top: 10px;">
+            <strong>Figure 1:</strong> Illustration of the average classification accuracy, test-time training GFLOPs, and FPS for different methods on cross-dataset classification tasks. For prompt-based and cache-based methods, the icon sizes denote the FPS values.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: 第二張圖片 -->
+      <div class="column">
+        <div class="content">
+          <!-- 
+            同樣地，先用佔位圖測試，然後換成您自己的第二張圖片路徑。
+            例如: src="./static/images/figure_2.png"
+          -->
+          <img src="https://placehold.co/600x400/EEE/31343C?text=Image+2+Here" alt="Figure 2"/>
+          <p class="has-text-justified" style="margin-top: 10px;">
+            <strong>Figure 2:</strong> The x-axis represents the compactness of test data(defined as the inverse of the average distance between each sample and its class center), and the y-axis represents the accuracy improvement of TDA [26] relative to zero-shot CLIP. A positive correlation is observed on the curve and two t-SNE visualizations on EuroSAT [18] and Aircraft [36] datasets.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
