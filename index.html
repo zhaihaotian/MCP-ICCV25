@@ -166,6 +166,36 @@ Vision-Language Models</h1>
 </section>
 
 <section class="section">
+    <!-- 方法流程圖 -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-centered">
+          <!-- 
+            *** 重要步驟 ***
+            請將下面的 'your_method_image.png' 換成您方法圖的檔名。
+            例如: <img src="./static/images/mcp_plus_plus.png" ... >
+            請確認圖片已經放在 static/images 資料夾中。
+          -->
+          <img src="./static/images/mcp.png" alt="Our Method Diagram"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- 流程圖下方的文字說明 -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            <strong>An overview of our MCP++ method. The Entropy Cache stores low-entropy samples, the Align Cache retains samples closest to the prototype center, and the Negative Cache preserves high-entropy samples after pseudo-label refinement through a reflecting mechanism. We introduce textual and visual prototypes refined with learnable residuals to construct the prototype center, which is optimized using alignment loss, contrastive loss and entropy loss. The final prediction is derived through a retrieval mechanism that aggregates similarity scores from negative cache features, prototype center and adaptive cache features.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
   <div class="container is-max-desktop">
     <!-- 
       解決方案：我們將圖片和文字分成兩行來處理。
@@ -224,19 +254,7 @@ Vision-Language Models</h1>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
+    
   </div>
 </section>
 
