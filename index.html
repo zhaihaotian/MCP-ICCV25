@@ -187,7 +187,7 @@ Vision-Language Models</h1>
             2. 檔名 (包含大小寫和 .png) 完全正確。
             例如: src="./static/images/figure_1.png"
           -->
-          <img src="https://placehold.co/600x400/EEE/31343C?text=Image+1+Here" alt="Figure 1"/>
+          <img src="./static/images/acc.png" alt="Figure 1"/>
           <p class="has-text-justified" style="margin-top: 10px;">
             <strong>Figure 1:</strong> Illustration of the average classification accuracy, test-time training GFLOPs, and FPS for different methods on cross-dataset classification tasks. For prompt-based and cache-based methods, the icon sizes denote the FPS values.
           </p>
@@ -201,9 +201,9 @@ Vision-Language Models</h1>
             同樣地，先用佔位圖測試，然後換成您自己的第二張圖片路徑。
             例如: src="./static/images/figure_2.png"
           -->
-          <img src="https://placehold.co/600x400/EEE/31343C?text=Image+2+Here" alt="Figure 2"/>
+          <img src="./static/images/intro.png" alt="Figure 2"/>
           <p class="has-text-justified" style="margin-top: 10px;">
-            <strong>Figure 2:</strong> The x-axis represents the compactness of test data(defined as the inverse of the average distance between each sample and its class center), and the y-axis represents the accuracy improvement of TDA [26] relative to zero-shot CLIP. A positive correlation is observed on the curve and two t-SNE visualizations on EuroSAT [18] and Aircraft [36] datasets.
+            <strong>Figure 2:</strong> The x-axis represents the compactness of test data(defined as the inverse of the average distance between each sample and its class center), and the y-axis represents the accuracy improvement of TDA relative to zero-shot CLIP. A positive correlation is observed on the curve and two t-SNE visualizations on EuroSAT and Aircraft datasets.
           </p>
         </div>
       </div>
@@ -279,31 +279,7 @@ Vision-Language Models</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+           In zero-shot setting, test-time adaptation adjusts pre-trained models using unlabeled data from the test phase to enhance performance on unknown test distributions. Existing cache-enhanced TTA methods rely on a low-entropy criterion to select samples for prototype construction, assuming intra-class compactness. However, low-entropy samples may be unreliable under distribution shifts, and the resulting prototypes may not ensure compact intra-class distributions. This study identifies a positive correlation between cache-enhanced performance and intra-class compactness. Based on this observation, we propose a Multi-Cache enhanced Prototype-based Test-Time Adaptation (MCP) featuring three caches: an entropy cache for initializing prototype representations with low-entropy samples, an align cache for integrating visual and textual information to achieve compact intra-class distributions, and a negative cache for prediction calibration using high-entropy samples. We further developed MCP++, a framework incorporating cross-modal prototype alignment and residual learning, introducing prototype residual fine-tuning. Comparative and ablation experiments across 15 downstream tasks demonstrate that the proposed method and framework achieve state-of-the-art generalization performance.
           </p>
         </div>
       </div>
