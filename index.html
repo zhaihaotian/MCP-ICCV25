@@ -256,56 +256,6 @@ Vision-Language Models</h1>
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Motivation</h2>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <p>
-            In the zero-shot setting, cache-based Test-Time Adaptation (TTA) has recently garnered significant attention, owing to its dual advantages of obviating the need for encoder backpropagation and effectively leveraging historical test information. To systematically advance this domain, we propose that the core process of TTA can be decoupled into two interconnected stages: cache construction and information utilization.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Future Work</h2>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          
-          <h4>Advancements in Cache Construction</h4>
-          <p>
-            While prevailing methods for cache construction largely adhere to a per-class organizational model, our work has extended this paradigm by not only exploring selection metrics beyond the conventional entropy criterion but also by constructing a synergistic multi-cache mechanism. We believe future research can continue along this trajectory to investigate more diverse cache construction strategies and their corresponding evaluation metrics.
-          </p>
-
-          <h4>Innovations in Readout Mechanisms</h4>
-          <p>
-            Once an effective cache is constructed, the subsequent challenge lies in designing its readout mechanism. We have proposed a solution that combines prototypes with an attention mechanism to balance the influence of class-level and instance-level information, and in separate work, have also validated the efficacy of Gaussian Discriminant Analysis (GDA). Crucially, once a rich cache is available, this stage of the task essentially transforms into a <strong>few-shot learning problem</strong>, implying that a broader range of mature methodologies from the few-shot domain can be adapted and applied.
-          </p>
-
-          <h4>Synergies with Unsupervised Paradigms</h4>
-          <p>
-            Furthermore, when integrating unsupervised loss paradigms such as Test-Time Prompt Tuning (TPT), exploring alternative loss functions or investigating optimal strategies for selecting augmented views for the unsupervised objective remain highly valuable research directions. In summary, as an emerging research paradigm, the Test-Time Adaptation of Vision-Language Models (TTA of VLMs) is not only challenging but also encompasses a multitude of fundamental topics worthy of in-depth exploration.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section" style="background-color: #f5f5f5;">
   <div class="container is-max-desktop">
@@ -394,6 +344,38 @@ Vision-Language Models</h1>
   </div>
 </section>
 
+
+<section class="section is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Future Work</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          
+          <h4>Advancements in Cache Construction</h4>
+          <p>
+            While prevailing methods for cache construction largely adhere to a per-class organizational model, our work has extended this paradigm by not only exploring selection metrics beyond the conventional entropy criterion but also by constructing a synergistic multi-cache mechanism. We believe future research can continue along this trajectory to investigate more diverse cache construction strategies and their corresponding evaluation metrics.
+          </p>
+
+          <h4>Innovations in Readout Mechanisms</h4>
+          <p>
+            Once an effective cache is constructed, the subsequent challenge lies in designing its readout mechanism. We have proposed a solution that combines prototypes with an attention mechanism to balance the influence of class-level and instance-level information, and in separate work, have also validated the efficacy of Gaussian Discriminant Analysis (GDA). Crucially, once a rich cache is available, this stage of the task essentially transforms into a <strong>few-shot learning problem</strong>, implying that a broader range of mature methodologies from the few-shot domain can be adapted and applied.
+          </p>
+
+          <h4>Synergies with Unsupervised Paradigms</h4>
+          <p>
+            Furthermore, when integrating unsupervised loss paradigms such as Test-Time Prompt Tuning (TPT), exploring alternative loss functions or investigating optimal strategies for selecting augmented views for the unsupervised objective remain highly valuable research directions. In summary, as an emerging research paradigm, the Test-Time Adaptation of Vision-Language Models (TTA of VLMs) is not only challenging but also encompasses a multitude of fundamental topics worthy of in-depth exploration.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
