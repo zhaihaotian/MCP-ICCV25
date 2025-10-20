@@ -360,17 +360,17 @@ Vision-Language Models</h1>
           
           <h4>Advancements in Cache Construction</h4>
           <p>
-            While prevailing methods for cache construction largely adhere to a per-class organizational model, our work has extended this paradigm by not only exploring selection metrics beyond the conventional entropy criterion but also by constructing a synergistic multi-cache mechanism. We believe future research can continue along this trajectory to investigate more diverse cache construction strategies and their corresponding evaluation metrics.
+            While prevailing methods for cache construction largely adhere to a per-class organizational model, our work has extended this paradigm by not only exploring selection metrics beyond the conventional entropy criterion but also by constructing a synergistic multi-cache mechanism. Recent efforts such as <a href="https://arxiv.org/abs/2403.17589" target="_blank" rel="noopener">DMN</a> and <a href="https://arxiv.org/abs/2410.15430" target="_blank" rel="noopener">BoostAdapter</a> illustrate the growing design space for cache sampling and maintenance, and we believe future research can continue along this trajectory to investigate more diverse cache construction strategies and their corresponding evaluation metrics.
           </p>
 
           <h4>Innovations in Readout Mechanisms</h4>
           <p>
-            Once an effective cache is constructed, the subsequent challenge lies in designing its readout mechanism. We have proposed a solution that combines prototypes with an attention mechanism to balance the influence of class-level and instance-level information, and in separate work, have also validated the efficacy of Gaussian Discriminant Analysis (GDA). Crucially, once a rich cache is available, this stage of the task essentially transforms into a <strong>few-shot learning problem</strong>, implying that a broader range of mature methodologies from the few-shot domain can be adapted and applied.
+            Once an effective cache is constructed, the subsequent challenge lies in designing its readout mechanism. We have proposed a solution that combines prototypes with an attention mechanism to balance the influence of class-level and instance-level information, and in our companion work <a href="https://arxiv.org/abs/2503.18334" target="_blank" rel="noopener">CRG</a> we further validate the efficacy of Gaussian Discriminant Analysis (GDA). Crucially, once a rich cache is available, this stage of the task essentially transforms into a <strong>few-shot learning problem</strong>, implying that a broader range of mature methodologies from the few-shot domain can be adapted and applied.
           </p>
 
           <h4>Synergies with Unsupervised Paradigms</h4>
           <p>
-            Furthermore, when integrating unsupervised loss paradigms such as Test-Time Prompt Tuning (TPT), exploring alternative loss functions or investigating optimal strategies for selecting augmented views for the unsupervised objective remain highly valuable research directions. In summary, as an emerging research paradigm, the Test-Time Adaptation of Vision-Language Models (TTA of VLMs) is not only challenging but also encompasses a multitude of fundamental topics worthy of in-depth exploration.
+            Furthermore, when integrating unsupervised paradigms, representative approaches like <a href="https://arxiv.org/abs/2407.15913" target="_blank" rel="noopener">TTL</a>, <a href="https://arxiv.org/abs/2410.12790" target="_blank" rel="noopener">DPE</a>, and <a href="https://arxiv.org/abs/2403.14119" target="_blank" rel="noopener">C-TPT</a> highlight the benefits of prompt- and feature-level adaptation without labels. Exploring alternative loss functions, improved augmentation selection strategies, and tighter integration between these unsupervised objectives and cache-based adaptation remains a highly promising direction.
           </p>
 
         </div>
